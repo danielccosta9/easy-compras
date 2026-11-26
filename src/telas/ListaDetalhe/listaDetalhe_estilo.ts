@@ -1,0 +1,46 @@
+import { StyleSheet } from 'react-native';
+import { cores, espaco, fontes, raio } from '@/theme/tema';
+
+export const estilos = StyleSheet.create({
+    topo: { flexDirection: 'row', alignItems: 'center', gap: espaco.sm },
+    botaoRedondo: {
+        width: 40,
+        height: 40,
+        borderRadius: raio.pilula,
+        backgroundColor: cores.superficie,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    titulo: { flex: 1, fontFamily: fontes.negrito, fontSize: 22, color: cores.texto },
+    resumo: {
+        gap: espaco.sm,
+        padding: espaco.md,
+        borderRadius: raio.md,
+        backgroundColor: cores.primariaSuave,
+    },
+    resumoLinha: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' },
+    resumoDireita: { alignItems: 'flex-end' },
+    resumoRotulo: { fontFamily: fontes.regular, fontSize: 12, color: cores.primariaEscura },
+    resumoValor: { fontFamily: fontes.seminegrito, fontSize: 18, color: cores.texto },
+    resumoNota: { fontFamily: fontes.regular, fontSize: 11, color: cores.primariaEscura },
+    adicionar: { gap: espaco.sm },
+    linhaAdicionar: { flexDirection: 'row', gap: espaco.sm, alignItems: 'flex-start' },
+    metade: { flex: 1 },
+    secao: { gap: espaco.xs },
+    sugestoes: { flexDirection: 'row', flexWrap: 'wrap', gap: espaco.xs },
+    sugestao: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 4,
+        paddingHorizontal: 12,
+        paddingVertical: 6,
+        borderRadius: raio.pilula,
+        backgroundColor: cores.superficie,
+        borderWidth: 1,
+        borderColor: cores.borda,
+    },
+    textoSugestao: { fontFamily: fontes.media, fontSize: 12, color: cores.texto },
+    rotuloSecao: { fontFamily: fontes.seminegrito, fontSize: 14, color: cores.texto },
+    vazio: { fontFamily: fontes.regular, fontSize: 13, color: cores.textoSuave },
+    carregando: { marginTop: espaco.xl },
+});
